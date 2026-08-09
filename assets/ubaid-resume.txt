@@ -1,0 +1,11 @@
+UBAID — ASPIRING FULL-STACK DEVELOPER
+
+Profile
+Aspiring MERN / Full-Stack developer with a focus on responsive web experiences,
+clean interfaces, and practical web applications.
+
+Skills
+HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, MySQL, WordPress, VS Code
+
+Portfolio
+This résumé placeholder is ready to be replaced with Ubaid's final résumé PDF.
