@@ -3,70 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ubaid — aspiring full-stack developer building thoughtful digital experiences." />
-    <meta name="theme-color" content="#0b1020" />
-    <title>Ubaid — Full-Stack Developer</title>
+    <meta name="description" content="Ubaid Ur Rehman Baig is an aspiring full-stack developer creating refined, practical web experiences." />
+    <meta name="theme-color" content="#101221" />
+    <title>Ubaid Ur Rehman Baig | Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div class="noise"></div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Ubaid home">U<span>·</span>DEV</a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a class="brand" href="#home" aria-label="Ubaid Ur Rehman Baig's homepage">U<span>/</span>DEV</a>
+
+      <button class="menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+
+      <a class="nav-cta" href="#contact">Let's work together <span aria-hidden="true">&nearr;</span></a>
     </header>
 
-    <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Available for opportunities</p>
-          <h1>Building <em>clear</em><br />ideas into<br /><strong>digital reality.</strong></h1>
-          <p class="hero-intro">Hi, I'm Ubaid — an aspiring full-stack developer who enjoys shaping useful, considered web experiences from interface to infrastructure.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#contact">Start a conversation <span>→</span></a></div>
+    <main id="main-content">
+      <section id="home" class="hero page-section">
+        <div class="hero-copy reveal">
+          <p class="kicker"><span></span> Available for opportunities</p>
+          <p class="hero-name">Ubaid Ur Rehman Baig</p>
+          <p class="hero-role">Aspiring full-stack developer</p>
+          <h1>Building the<br /><em>next</em> with code.</h1>
+          <p class="hero-summary">I'm Ubaid Ur Rehman Baig, an aspiring full-stack developer turning ambitious ideas into considered web experiences — from the first interaction to the data behind it.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#projects">See selected work <span aria-hidden="true">&darr;</span></a>
+            <a class="quiet-link hero-quiet-link" href="assets/ubaid-resume.txt" download>Download r&eacute;sum&eacute; <span aria-hidden="true">&darr;</span></a>
+          </div>
         </div>
-        <div class="hero-art" aria-label="Decorative developer graphic">
-          <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="grid-plane"></div>
-          <div class="code-card"><div class="code-top"><i></i><i></i><i></i><span>ubaid.js</span></div><pre><code><b>const</b> developer = {
-  name: <mark>'Ubaid'</mark>,
-  stack: <mark>'MERN'</mark>,
-  mindset: <mark>'curious'</mark>,
-  <b>create</b>() { <b>return</b> impact; }
-};</code></pre></div>
-          <div class="floating-tag tag-one">React <b>✦</b></div><div class="floating-tag tag-two">Node.js <b>✦</b></div>
+
+        <div class="hero-visual reveal">
+          <p class="hero-watermark" aria-hidden="true">URB</p>
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/images/ubaid-ur-rehman-baig.jpg" alt="Portrait of Ubaid Ur Rehman Baig" />
+          </div>
+          <p class="portrait-label">Open to opportunities <b>+</b></p>
+          <p class="role-pill">MERN / React / Node</p>
         </div>
-        <div class="scroll-note">SCROLL TO DISCOVER <span></span></div>
+
+        <p class="scroll-cue">Scroll to explore <span></span></p>
       </section>
 
-      <section id="about" class="about section-wrap">
-        <div class="section-label">01 / ABOUT ME</div>
-        <div class="about-content"><p class="display-copy">I care about the feeling <em>after</em> someone uses what I build.</p><div class="about-details"><p>I'm a developer in progress with a practical love for the web: elegant interfaces, clean code, and products that solve real problems. I bring a detail-oriented approach to every stage of a build.</p><a class="text-link" href="#contact">More about me <span>→</span></a></div></div>
-        <div class="stats"><div><strong>01+</strong><span>Years learning & building</span></div><div><strong>08+</strong><span>Tools in my daily stack</span></div><div><strong>∞</strong><span>Curiosity to improve</span></div></div>
-      </section>
-
-      <section id="work" class="work section-wrap">
-        <div class="section-heading"><div><div class="section-label">02 / SELECTED WORK</div><h2>Things I've<br />brought to <em>life.</em></h2></div><p>Concepts and builds that show how I think, make, and keep learning.</p></div>
-        <div class="projects">
-          <article class="project project-featured"><a href="#contact" aria-label="View Campus Connect project"><div class="project-visual campus"><div class="window"><div class="window-bar"><i></i><i></i><i></i></div><div class="mock-nav">campus<span>connect</span><b>Home &nbsp; Events &nbsp; Clubs</b></div><div class="mock-body"><div><small>STUDENT LIFE, CONNECTED.</small><strong>Find your<br />community.</strong><button>Explore events</button></div><div class="mock-circle">✦</div></div></div></div><div class="project-meta"><div><span>01 — WEB PLATFORM</span><h3>Campus Connect</h3></div><span class="arrow">↗</span></div></a></article>
-          <article class="project"><a href="#contact" aria-label="View ShopSphere project"><div class="project-visual shop"><div class="phone"><div class="phone-head">SHOPSPHERE <span>⌕ &nbsp; ♡</span></div><div class="product-shape"></div><b>Everyday, elevated.</b><small>New essentials for your space.</small><button>Shop collection</button></div></div><div class="project-meta"><div><span>02 — E-COMMERCE</span><h3>ShopSphere</h3></div><span class="arrow">↗</span></div></a></article>
-          <article class="project"><a href="#contact" aria-label="View TaskFlow project"><div class="project-visual task"><div class="task-board"><div class="task-head">Taskflow <span>◉ U</span></div><div class="task-columns"><div><b>TO DO</b><i>Project research</i><i>Wireframes</i><i>Setup repo</i></div><div><b>IN PROGRESS</b><i class="purple">Build dashboard</i><i>API endpoints</i></div><div><b>DONE</b><i class="green">Design system</i></div></div></div></div><div class="project-meta"><div><span>03 — PRODUCTIVITY APP</span><h3>TaskFlow</h3></div><span class="arrow">↗</span></div></a></article>
+      <section id="about" class="about page-section page-section-wide">
+        <div class="section-number">01 / About</div>
+        <div class="about-layout">
+          <h2 class="statement reveal">Good development is more than making something <em>work.</em></h2>
+          <div class="about-copy reveal">
+            <p>I enjoy solving practical problems with clean, approachable digital products. My process balances visual clarity, accessibility, and reliable engineering — so the finished experience feels natural to the people using it.</p>
+            <a class="underlined-link" href="#contact">Let's start a conversation <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="quick-facts reveal">
+          <div><strong>Full-stack</strong><span>Development focus</span></div>
+          <div><strong>MERN</strong><span>Core application stack</span></div>
+          <div><strong>Always</strong><span>Learning &amp; improving</span></div>
         </div>
       </section>
 
-      <section id="skills" class="skills section-wrap"><div class="section-label">03 / TOOLKIT</div><div class="skills-top"><h2>Powered by<br /><em>purposeful</em> tech.</h2><p>A focused toolkit for taking ideas from first sketch through a confident launch.</p></div><div class="skill-list"><div><span>01</span><strong>Frontend</strong><p>HTML · CSS · JavaScript · React</p></div><div><span>02</span><strong>Backend</strong><p>Node.js · Express · REST APIs</p></div><div><span>03</span><strong>Database</strong><p>MongoDB · MySQL</p></div><div><span>04</span><strong>Workflow</strong><p>Git · VS Code · WordPress</p></div></div></section>
+      <section id="projects" class="projects page-section">
+        <div class="section-intro">
+          <div>
+            <div class="section-number">02 / Selected work</div>
+            <h2>Built to be <em>used.</em></h2>
+          </div>
+          <p>A selection of concepts and practice builds that reflect how I approach product thinking and implementation.</p>
+        </div>
 
-      <section class="credentials section-wrap"><div class="section-label">04 / LEARNING PATH</div><div class="credential-grid"><div><h2>Always<br /><em>building</em> forward.</h2><p>Continuous learning is how I keep my work relevant, resilient, and full of possibility.</p></div><div class="credential-list"><article><span>EDUCATION</span><div><h3>Full-Stack Development</h3><p>Focused study in modern web development & databases</p></div><b>NOW</b></article><article><span>CERTIFICATIONS</span><div><h3>Web Development Foundations</h3><p>HTML, CSS, JavaScript & responsive design</p></div><b>01</b></article><article><span>EXPLORING</span><div><h3>MERN Stack Applications</h3><p>End-to-end apps with React, Node & MongoDB</p></div><b>02</b></article></div></div></section>
+        <div class="project-grid">
+          <article class="project-card project-card-featured reveal">
+            <a href="#contact" aria-label="Discuss the Campus Connect project">
+              <div class="project-preview preview-campus">
+                <div class="browser-window">
+                  <div class="browser-chrome"><i></i><i></i><i></i><span>campusconnect.app</span></div>
+                  <div class="campus-nav"><b>campus<span>connect</span></b><small>Events&nbsp;&nbsp;&nbsp;Clubs&nbsp;&nbsp;&nbsp;Discover</small></div>
+                  <div class="campus-content"><div><small>STUDENT LIFE, CONNECTED</small><strong>Find your<br />community.</strong><button type="button">Explore events</button></div><div class="campus-shape">+</div></div>
+                </div>
+              </div>
+              <div class="project-details"><div><p>01 / Community platform</p><h3>Campus Connect</h3></div><span aria-hidden="true">&nearr;</span></div>
+            </a>
+          </article>
 
-      <section class="services section-wrap"><div class="section-label">05 / HOW I CAN HELP</div><div class="service-grid"><article><span>✳</span><h3>Frontend<br />Development</h3><p>Responsive, accessible interfaces that feel as good as they look.</p></article><article><span>◌</span><h3>Full-Stack<br />Web Apps</h3><p>Purpose-built applications from database design to final deployment.</p></article><article><span>↗</span><h3>WordPress<br />Websites</h3><p>Flexible, easy-to-manage sites tailored to your brand and goals.</p></article></div></section>
+          <article class="project-card reveal">
+            <a href="#contact" aria-label="Discuss the ShopSphere project">
+              <div class="project-preview preview-shop">
+                <div class="store-card"><div class="store-heading">SHOPSPHERE <span>MENU + BAG</span></div><div class="store-image"></div><h4>Objects for everyday.</h4><p>Thoughtfully chosen essentials.</p><button type="button">Shop the edit</button></div>
+              </div>
+              <div class="project-details"><div><p>02 / E-commerce</p><h3>ShopSphere</h3></div><span aria-hidden="true">&nearr;</span></div>
+            </a>
+          </article>
 
-      <section id="contact" class="contact"><div class="contact-grid"></div><div class="contact-content"><p class="eyebrow"><span></span> HAVE A PROJECT IN MIND?</p><h2>Let's make<br />something <em>memorable.</em></h2><a class="contact-email" href="mailto:hello@ubaid.dev">hello@ubaid.dev <span>↗</span></a><div class="contact-bottom"><p>Open to junior developer roles, collaborations, and interesting ideas.</p><a class="resume" href="assets/ubaid-resume.txt" download>Download résumé <span>↓</span></a></div></div></section>
+          <article class="project-card reveal">
+            <a href="#contact" aria-label="Discuss the TaskFlow project">
+              <div class="project-preview preview-taskflow">
+                <div class="taskflow-window"><div class="taskflow-title">Taskflow <span>U</span></div><div class="task-columns"><div><b>TO DO</b><i>Plan dashboard</i><i>Write content</i><i>Research flow</i></div><div><b>IN PROGRESS</b><i class="tag-purple">Create components</i><i>Connect API</i></div><div><b>DONE</b><i class="tag-green">Design system</i></div></div></div>
+              </div>
+              <div class="project-details"><div><p>03 / Productivity app</p><h3>TaskFlow</h3></div><span aria-hidden="true">&nearr;</span></div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="expertise" class="expertise page-section page-section-wide">
+        <div class="section-number">03 / Expertise</div>
+        <div class="expertise-heading"><h2>A deliberate<br />toolkit for the <em>web.</em></h2><p>From a sharp interface to the systems supporting it, I use the right tools to create maintainable, responsive work.</p></div>
+        <div class="capability-list">
+          <article><span>01</span><h3>Frontend development</h3><p>HTML, CSS, JavaScript, React</p></article>
+          <article><span>02</span><h3>Backend &amp; APIs</h3><p>Node.js, Express, REST APIs</p></article>
+          <article><span>03</span><h3>Data &amp; content</h3><p>MongoDB, MySQL, WordPress</p></article>
+          <article><span>04</span><h3>Development workflow</h3><p>Git, VS Code, responsive design</p></article>
+        </div>
+      </section>
+
+      <section class="journey page-section">
+        <div class="section-number">04 / Learning journey</div>
+        <div class="journey-grid"><div><h2>Never done<br /><em>learning.</em></h2><p>I'm continuing to deepen my skills in modern full-stack development, with a focus on shipping useful applications and growing through hands-on work.</p></div><div class="journey-list"><article><span>NOW</span><div><h3>Full-stack development</h3><p>Building fluency across the MERN stack and data-driven applications.</p></div></article><article><span>FOCUS</span><div><h3>Responsive web design</h3><p>Creating interfaces that work beautifully across devices and contexts.</p></div></article><article><span>NEXT</span><div><h3>Production-ready applications</h3><p>Growing stronger in architecture, APIs, and deployment workflows.</p></div></article></div></div>
+      </section>
+
+      <section class="services page-section page-section-wide">
+        <div class="section-number">05 / Services</div>
+        <div class="service-grid">
+          <article><span>01</span><h3>Frontend<br />development</h3><p>Polished, accessible interfaces built to perform at every screen size.</p></article>
+          <article><span>02</span><h3>Full-stack<br />web apps</h3><p>Practical applications with thoughtful UI, APIs, and data handling.</p></article>
+          <article><span>03</span><h3>WordPress<br />websites</h3><p>Flexible, easy-to-manage websites tailored to a clear business need.</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-pattern"></div>
+        <div class="contact-content">
+          <p class="kicker"><span></span> Have a project in mind?</p>
+          <h2>Let's make it<br /><em>meaningful.</em></h2>
+          <a class="email-link" href="mailto:hello@ubaid.dev">hello@ubaid.dev <span aria-hidden="true">&nearr;</span></a>
+          <div class="contact-footer"><p>Open to junior developer roles, collaborations, and great ideas.</p><a class="button button-lime" href="assets/ubaid-resume.txt" download>Download r&eacute;sum&eacute; <span aria-hidden="true">&darr;</span></a></div>
+        </div>
+      </section>
     </main>
-    <footer><a class="brand" href="#top">U<span>·</span>DEV</a><p>© 2026 Ubaid. Crafted with care.</p><div><a href="#top">LinkedIn</a><a href="#top">GitHub</a></div></footer>
+
+    <footer class="site-footer"><a class="brand" href="#home">U<span>/</span>DEV</a><p>&copy; 2026 Ubaid Ur Rehman Baig. Made with care.</p><div><a href="#home">LinkedIn</a><a href="#home">GitHub</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
